@@ -1,13 +1,13 @@
-# 🚀 Arch Linux Dell 15 (7320U)
+# 🚀 Arch Linux Dell 15 (7320U) - SysAdmin Build
 
-## 🛠 Key Architecture
-- **Filesystem:** Btrfs + Subvolumes (`@`, `@home`, `@var_log`, `@snapshots`).
-- **Persistence:** Snapper + `grub-btrfs` + `snapper-rollback`.
-- **Shell:** Zsh with XDG Enforcement.
-- **Boot:** `systemd` hooks + Terminus font.
+This is a public deployment script for a professional Arch Linux workstation.
 
-## 💾 Installation
-1. Boot Arch ISO, connect to Wi-Fi.
-2. Clone: `git clone https://github.com/bryanhrobbins/Arch.git`
-3. Run: `./install.sh`
-4. Reboot, Login, and Run: `./first-run.sh`
+## ⚠️ PRE-INSTALLATION STEP
+This repository uses a **dummy** `install.conf`. You **MUST** edit it before running the installer, or the installation will fail or use default "dummy" credentials.
+
+### 💾 Installation Flow
+1. **Boot** Arch ISO and connect to Wi-Fi.
+2. **Clone**: `git clone https://github.com/bryanhrobbins/Arch.git && cd Arch`
+3. **Configure**: `nano install.conf` <-- **Change passwords and username here!**
+4. **Deploy**: `chmod +x install.sh && ./install.sh`
+5. **Finalize**: Reboot, login, and run `./first-run.sh`
